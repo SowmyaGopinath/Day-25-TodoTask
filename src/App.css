@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-fluid{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  padding: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card{
+  width:20%;
+  padding:20px;
+  margin: 20px;
+  border-radius: 1px;
+  border: none;
+  background: rgb(204,245,211);
+  
   }
-  to {
-    transform: rotate(360deg);
+  .button{
+    display: flex;
+    justify-content: end;
+    >button{
+      width: 100px;
+      height: 30px;
+      margin-left: 5px;
+      
+    }
   }
-}
+   
+  .edit,.save{
+    background: rgb(19,173,137);
+    border:none;
+    color:white;
+    border-radius: 5px;
+  }
+  .delete,.cancel{
+    background: rgb(209,89,22);
+    border: none;
+    color:white;
+    border-radius: 5px;
+  }
+  .addbutton{
+    width:180px;
+    height: 35px;
+    background: rgb(19,173,137) ;
+    border:none;
+    color:white;
+    border-radius: 5px;
+  }
+  .inputbox{
+    width: 400px;
+    border:1px solid rgb(19,173,137);
+    padding:5px;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+  }
+  h3{
+    color:rgb(19,173,137) ;
+    margin: 20px;
+  }
+  
+
+  @media only screen and (max-width:800px){
+    .card{
+      width:40%;
+   
+    }
+  }
+ 
+
+  @media only screen and (max-width:600px){
+    .card{
+      width:50%;
+   
+    }
+  }
